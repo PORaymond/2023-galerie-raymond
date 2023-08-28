@@ -1,0 +1,44 @@
+/*style pour la page d'accueil */
+
+html {
+    margin: 0;
+    width: 100%;
+    background-color: black;
+
+}
+
+.conteneur {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+h1 {
+    margin: auto;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.bas {
+    padding: 50px;
+    text-align: center;
+
+}
+
+footer li,
+ul {
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+    padding: 0;
+    text-align: justify;
+}
+
+ul li a,
+ul li a:hover,
+ul li a:active {
+    color: white;
+
+}
