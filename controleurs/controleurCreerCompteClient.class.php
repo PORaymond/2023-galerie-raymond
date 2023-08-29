@@ -57,14 +57,13 @@ class CreerCompteClient extends Controleur
             array_push($this->messagesErreur, "Erreur lors de la création du compte.");
 
             return "loginClient";
-
         }
+
         if (session_status() != PHP_SESSION_ACTIVE)
             session_start();
 
         $_SESSION['nom_utilisateur'] = $nouveauClient->getPrenom() . " " . $nouveauClient->getNom();
+
         return "succesNvCompte";
     }
-
-
 }

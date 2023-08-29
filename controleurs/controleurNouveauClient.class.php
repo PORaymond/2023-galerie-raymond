@@ -4,6 +4,8 @@
 // Date          : 21 octobre 2022
 // Auteurs       : Elisabeth Tremblay
 // *****************************************************************************************
+
+// ce controlleur est appelé par l’action "nouveauClient"
 include_once(__DIR__ . "/controleur.abstract.class.php");
 include_once(__DIR__ . "/../modele/DAO/ClientDAO.class.php");
 include_once(__DIR__ . "/../modele/client.class.php");
@@ -22,11 +24,10 @@ class NouveauClient extends Controleur
     {
         return $this->tabClients;
     }
-
+    // executerAction retourne le nom de la vue à afficher par index.php
     public function executerAction()
     {
             return "nouveauClient";
-
     }
 
 

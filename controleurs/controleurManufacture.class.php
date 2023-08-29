@@ -38,8 +38,12 @@ class Manufacture
     public static function creerControleur($action)
     {
         $controleur = null;
+        // actions liées à l’utilisateur anonyme
         if ($action == "accueilCatalogue") {
             $controleur = new AccueilCatalogue();
+        } elseif ($action == "nouveauClient") {
+            $controleur = new NouveauClient();
+
         } elseif ($action == "pageFactureCommande") {
             $controleur = new FactureCommande();
         } elseif ($action == "pageEntrerOeuvre") {
@@ -78,8 +82,6 @@ class Manufacture
             $controleur = new SuppressionOeuvre();
         } elseif ($action == "deconnexionAdmin") {
             $controleur = new deconnexionAdmin();
-        } elseif ($action == "nouveauClient") {
-            $controleur = new NouveauClient();
         } elseif ($action == "creerCompteClient") {
             $controleur = new CreerCompteClient();
         } elseif ($action == "confirmerCommande") {

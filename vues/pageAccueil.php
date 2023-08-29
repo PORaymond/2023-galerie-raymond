@@ -65,9 +65,13 @@
                 <li class='option_active'>
                     <a href="?action=accueilCatalogue">Entrer</a>
                 </li>
+                <!-- Ne pas effacer ce lien
+                Pour la premiére phase de déploiement, on oublie toutes les opérations relatives au client(panier, passer une commande)
+
                 <li>
                     <a href="?action=loginClient">Login client</a>
                 </li>
+                -->
             </ul>
             <!--------------- FIN DU MENU --------------->
         </footer>

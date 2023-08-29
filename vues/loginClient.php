@@ -1,5 +1,4 @@
 <?php
-//define("DOSSIER_RACINE", "galerie/");
 
 if (session_status() != PHP_SESSION_ACTIVE)
     session_start();
@@ -12,11 +11,9 @@ if (session_status() != PHP_SESSION_ACTIVE)
     <title>LOGIN</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style_admin.css">
-
 </head>
 
 <body>
-
 <section class="vh-100 gradient-custom">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -36,13 +33,11 @@ if (session_status() != PHP_SESSION_ACTIVE)
                                 <input type="password" name="mot_passe" placeholder="Mot de passe"
                                        class="form-control form-control-lg text-center" required="required"><br>
 
-
                                 <button class="btn btn-outline-light btn-lg px-5" type="submit" href="?action=seConnecter">Entrer</button>
                                 <p><?php include_once "vues/inclusions/fonctions.inc.php";
                                 afficherErreurs($controleur->getMessagesErreur());?>
                                 </p>
                             </form>
-
                         </div>
 
                         <div>

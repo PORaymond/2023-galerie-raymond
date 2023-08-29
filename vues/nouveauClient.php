@@ -49,7 +49,6 @@ $titre = "Nouveau compte client";
                        value="Créer le nouveau compte client">
             </form>
         </div>
-
     </main>
 </div>
 </body>

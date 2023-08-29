@@ -14,8 +14,6 @@ class LoginClient extends Controleur
         if (isset($_SESSION['utilisateurConnecte'])) {
             array_push($this->messagesErreur, "Vous êtes déjà connecté.");
             return "pageAccueilCatalogue";
-            
-            // session_unset();
         }
         return "loginClient";
     }

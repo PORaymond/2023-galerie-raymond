@@ -71,7 +71,6 @@ else $clientConnecte = "visiteur";
                                 if (isset($_SESSION['nbOeuvresPanier'])){
                                     echo $_SESSION['nbOeuvresPanier'];
                                 } else {
-
                                     echo "0";
                                 }?>
                             </span>)

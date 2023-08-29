@@ -24,7 +24,7 @@
                                 <a class="nav-link " href="../suppression.php">Suppression d’un item</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../loginAdmin.php">Déconnexion</a>
+                                <a class="nav-link " href="../vLoginAdmin.php">Déconnexion</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="../../index.php">Retour à la page principale</a>
