@@ -60,6 +60,7 @@ class Manufacture
             $controleur = new AdminCatalogue();
         } elseif ($action == "loginAdmin") {
             $controleur = new LoginAdmin();
+
         } elseif ($action == "pageModifierOeuvre") {
             $controleur = new ModifierOeuvre();
         } elseif ($action == "pageConfirmerModifOeuvre") {
@@ -68,6 +69,7 @@ class Manufacture
             $controleur = new ValiderModifOeuvre();
         } elseif ($action == "enregistrerModification") {
             $controleur = new EnregistrerModification();
+
         } elseif ($action == "pageChoisirSuppressionOeuvre") {
             $controleur = new ChoisirSuppressionOeuvre();
         } elseif ($action == "pageConfirmerSuppressionOeuvre") {

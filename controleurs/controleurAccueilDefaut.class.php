@@ -16,21 +16,14 @@ class AccueilDefaut extends Controleur
         parent::__construct();
     }
 
-
     // ******************* Méthode exécuter action
     // implémenter la méthde executerAction
     // retournez la page d'accueil
     public function executerAction()
     {
-
-        //----------------------------- VÉRIFIER LA VALIDITÉ DE LA SESSION (pas besoin ici) -----------
-        //----------------------------- VÉRIFIER LA VALIDITÉ DES POSTS (pas besoin ici) ---------------
-        //----------------------------- INTERACTION BD (pas besoin ici) -------------------------------
         //----------------------------- RETOURNER LE NOM DE LA VUE À APPELER -----
         return "pageAccueil";
     }
 
 
 }
-
-?>
