@@ -15,6 +15,6 @@ class LoginAdmin extends Controleur
 
     public function executerAction()
     {
-        return "loginAdmin";
+        return "vLoginAdmin";
     }
 }
