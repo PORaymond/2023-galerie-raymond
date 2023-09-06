@@ -106,7 +106,8 @@ if (isset($_SESSION['photo'])) {
                                         <option value="300">Hommes</option>
                                         <option value="400">Mctoffy</option>
                                         <option value="500">Cartes</option>
-                                    </select>
+                                    </select><br>
+                                    <button type="button" class="btn btn-primary">nouvelle catégorie</button><br>
                                     <input type="submit" value="Ajouter">
                                 </form>
                             </div>
