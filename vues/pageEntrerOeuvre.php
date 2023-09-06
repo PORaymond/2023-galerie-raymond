@@ -91,9 +91,14 @@ if (isset($_SESSION['photo'])) {
                                     <label class="oeuvre" for="date">Date de création</label><br>
                                     <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
                                             class="erreur"><?php echo $_SESSION['errDate'] ?> </span><br>
-                                    <label class="oeuvre" for="photo">Photo</label><br>
+                                    <!--Télécharger une photo-->
+                                    <label class="oeuvre" for="photo"></label><br>
+                                    <button type="button" class="btn btn-primary">Télécharger une photo</button>
+                                    <br><br>
                                     <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
                                             class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
+
+
                                     <label class="oeuvre" for="categorie">Catégorie</label><br>
                                     <select name="categorie" id="categorie">
                                         <option value="100">Monstres</option>
