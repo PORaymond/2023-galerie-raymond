@@ -6,7 +6,7 @@ $titre = "Ajouter une oeuvre";
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-// Vérifier s’il y a un message des messages d’erreur pour les afficher le cas échéant
+// Vérification des messages d’erreur
 if (!isset($_SESSION['errTitre'])) {
     $_SESSION['errTitre'] = "";
 }
@@ -23,7 +23,7 @@ if (!isset($_SESSION['errPrix'])) {
     $_SESSION['errPrix'] = "";
 }
 
-//Vérifier si des champs sont déjà remplies
+//Réinitialisation des variables globale associées aux propriétés de la nouvelle oeuvre
 $titreOeuvre = "";
 $descOeuvre = "";
 $prix = "";
@@ -47,6 +47,11 @@ if (isset($_SESSION['photo'])) {
 ?>
 
 <head>
+    <!--
+    Inclusion de
+        - Bootstrap
+        - Font-awesome (icone de panier)
+    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,24 +85,28 @@ if (isset($_SESSION['photo'])) {
                                     <input type="text" name="titre" id="titre"
                                            value="<?php echo $titreOeuvre ?>"><span
                                             class="erreur"><?php echo $_SESSION['errTitre'] ?> </span><br>
+
                                     <label class="oeuvre" for="desc_oeuvre">Description</label><br>
                                     <input type="text" name="desc_oeuvre" id="desc_oeuvre"
                                            value="<?php echo $descOeuvre ?>"><span
                                             class="erreur"><?php echo $_SESSION['errDescOeuvre'] ?> </span><br>
+
                                     <label class="oeuvre" for="prix">Prix</label><br>
                                     <input type="number" step="any" name="prix" id="prix"
                                            value="<?php echo $prix ?>"><span
                                             class="erreur"><?php echo $_SESSION['errPrix'] ?> </span><br>
+
                                     <label class="oeuvre" for="date">Date de création</label><br>
                                     <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
                                             class="erreur"><?php echo $_SESSION['errDate'] ?> </span><br>
                                     <!--Télécharger une photo-->
+
                                     <label class="oeuvre" for="photo"></label><br>
                                     <button type="button" class="btn btn-primary">Télécharger une photo</button>
                                     <br><br>
+
                                     <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
                                             class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
-
 
                                     <label class="oeuvre" for="categorie">Catégorie</label><br>
                                     <select name="categorie" id="categorie">
@@ -106,8 +115,12 @@ if (isset($_SESSION['photo'])) {
                                         <option value="300">Hommes</option>
                                         <option value="400">Mctoffy</option>
                                         <option value="500">Cartes</option>
-                                    </select><br>
-                                    <button type="button" class="btn btn-primary">nouvelle catégorie</button><br>
+                                    </select>
+                                    <br><br>
+                                    <button onclick="montrerInputCategorie()" type="button" class="btn btn-primary">nouvelle catégorie</button>
+                                    <br><br>
+                                    <div id="nouvelleCategorie">nouvelle catégorie</div>
+                                    <br>
                                     <input type="submit" value="Ajouter">
                                 </form>
                             </div>
@@ -119,6 +132,16 @@ if (isset($_SESSION['photo'])) {
     </main>
 </div>
 </body>
+<script>
+    function montrerInputCategorie(){
+        let nouvCat = document.getElementById("nouvelleCategorie");
+        if (nouvCat.style.display === "none"){
+            nouvCat.style.display ="block";
+        } else {
+          nouvCat.style.display = "none";
+        }
+    }
+</script>
 </html>
 
 
