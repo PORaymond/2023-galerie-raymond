@@ -36,8 +36,8 @@ if ($typeActeur == "admin")
         <form>
             <select onchange="affichageChoixMenu()" class="form-select affCatalogue"
                     name="affCatalogueOeuvres" id="affCatalogueOeuvres">
-                <option id="affCatalogueTout" value="affCatalogueTout">Afficher toutes les oeuvres</option>
-                <option id="affCatalogueCat" value="affCatalogueCat">Afficher les oeuvres par catégorie</option>
+                <option id="affCatalogueTout" value="affCatalogueTout">Toutes les oeuvres</option>
+                <option id="affCatalogueCat" value="affCatalogueCat">Les oeuvres par catégorie</option>
             </select>
 
         </form>
