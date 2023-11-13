@@ -126,7 +126,7 @@ function afficherOeuvresPanier()
 function afficheLesOeuvresDunTableau($unTableau)
 {
     foreach ($unTableau as $uneOeuvre) {
-
+        // TODO clarifier ce teste à quoi ça sert de passer un tableau    
         if (isset($_SESSION['tableauOeuvre'])) {
             $indice = array_search($uneOeuvre->getIdOeuvre(), $_SESSION['tableauOeuvre']);
 

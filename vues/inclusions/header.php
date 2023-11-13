@@ -29,7 +29,7 @@
                     echo "<h5 id='bienvenue'>Bienvenue</h5>";
                     ?>
                     <!-- Ne pas effacer ce lien
-                Pour la premiére phase de déploiement, on oublie toutes les opérations relatives au client(création de compte, panier, passer une commande)
+                    Pour la premiére phase de déploiement, on oublie toutes les opérations relatives au client(création de compte, panier, passer une commande)
                         <a id="creationCompte" href="?action=nouveauClient">Se créer un compte</a>
                         -->
                     <?php

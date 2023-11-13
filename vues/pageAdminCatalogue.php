@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+    
 <?php
 $titre = "Galerie Raymond";
 
 $typeActeur = $controleur->getActeur();
 if ($typeActeur == "admin")
     $clientConnecte = "admin";
-
 ?>
 
 <head>
