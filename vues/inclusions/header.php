@@ -1,14 +1,18 @@
 <header class="ordinateur header-catalogue">
-    <div class="logo ordinateur"></div>
-        <div class="container">
-            <div class="row accueil_client">
-                <div class="col-auto ">
-                <h1 class = "titre-site"><?php echo $titre ?></h1>
-                </div>
-                <div class="col">
+    <div class="logo ordinateur">
 
-                </div>
-                <div class="col-auto ">
+    </div>
+    <div class="container">
+        <div class="row accueil_client">
+            <div class="col-auto ">
+                <h1 class = "titre-site"><?php echo $titre ?></h1>
+            </div>
+        
+            <div class="col">
+
+            </div>
+        
+            <div class="col-auto ">
                 <?php
                 if (isset($_SESSION['utilisateurConnecte'])) {
 
@@ -27,15 +31,15 @@
                 }
                 } else {
                     echo "<h5 id='bienvenue'>Bienvenue</h5>";
-                    ?>
+                ?>
                     <!-- Ne pas effacer ce lien
                     Pour la premiére phase de déploiement, on oublie toutes les opérations relatives au client(création de compte, panier, passer une commande)
                         <a id="creationCompte" href="?action=nouveauClient">Se créer un compte</a>
                         -->
-                    <?php
+                <?php
                     }
 
-            ?>
+                ?>
             </div>
         </div>
     </div>

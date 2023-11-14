@@ -119,7 +119,9 @@ if (isset($_SESSION['photo'])) {
                                     <br><br>
                                     <button onclick="montrerInputCategorie()" type="button" class="btn btn-primary">nouvelle catégorie</button>
                                     <br><br>
-                                    <div id="nouvelleCategorie">nouvelle catégorie</div>
+                                    <div id="nouvelleCategorie" style="display : none;">
+                                        <input type="text" name="catégoies" id="cat" value="">
+                                    </div>
                                     <br>
                                     <input type="submit" value="Ajouter">
                                 </form>
