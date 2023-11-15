@@ -44,6 +44,8 @@ if (isset($_SESSION['date'])) {
 if (isset($_SESSION['photo'])) {
     $photo = $_SESSION['photo'];
 }
+//Appel de la fonction categorieDao::chercherTous()
+
 ?>
 
 <head>
@@ -107,6 +109,7 @@ if (isset($_SESSION['photo'])) {
 
                                     <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
                                             class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
+
 
                                     <label class="oeuvre" for="categorie">Catégorie</label><br>
                                     <select name="categorie" id="categorie">
