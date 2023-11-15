@@ -2,6 +2,9 @@
 <html lang="en">
 <?php
 include_once(__DIR__."/../modele/DAO/categorieDAO.class.php");
+
+$tableauCategorie = CategorieDao::chercherTous();
+echo ($tableauCategorie);
 $titre = "Ajouter une oeuvre";
 
 if (session_status() == PHP_SESSION_NONE) {
