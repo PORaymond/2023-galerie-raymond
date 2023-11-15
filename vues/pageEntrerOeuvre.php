@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 include_once(__DIR__."/../modele/DAO/categorieDAO.class.php");
+$tableau_categorie = CategorieDao::chercherTous();
 $titre = "Ajouter une oeuvre";
 
 if (session_status() == PHP_SESSION_NONE) {
@@ -114,12 +115,16 @@ if (isset($_SESSION['photo'])) {
 
                                     <label class="oeuvre" for="categorie">Catégorie</label><br>
                                     <select name="categorie" id="categorie">
-                                        <option value="100">Monstres</option>
-                                        <option value="200">Femmes</option>
-                                        <option value="300">Hommes</option>
-                                        <option value="400">Mctoffy</option>
-                                        <option value="500">Cartes</option>
+                                        <?php
+                                        // Remplir l’élément select avec le catégories de ma base de données 
+                                            foreach ($tableau_categorie as $entry) {
+                                                $value = $entry->getIdCategorie();
+                                                $label = $entry->getDescCategorie();
+                                                echo "<option value=\"$value\">$label</option>";
+                                            }
+                                        ?>
                                     </select>
+                                    
                                     <br><br>
                                     <button onclick="montrerInputCategorie()" type="button" class="btn btn-primary">nouvelle catégorie</button>
                                     <br><br>
