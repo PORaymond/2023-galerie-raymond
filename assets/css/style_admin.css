@@ -129,7 +129,7 @@ body {
 }
 
 span.erreur {
-    color: maroon;
+    color: rgb(253, 200, 101);
 }
 
 .mobile {
