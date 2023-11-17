@@ -43,7 +43,8 @@ class Manufacture
             $controleur = new AccueilCatalogue();
         } elseif ($action == "nouveauClient") {
             $controleur = new NouveauClient();
-
+        // actions liées à l’admin
+        // actions liées au client
         } elseif ($action == "pageFactureCommande") {
             $controleur = new FactureCommande();
         } elseif ($action == "pageEntrerOeuvre") {

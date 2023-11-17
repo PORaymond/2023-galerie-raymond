@@ -41,10 +41,7 @@ ul {
     margin: 0;
 }
 
-nav {
-    overflow: hidden;
-    position: relative;
-}
+
 
 .couleur-fond {
     background-color: var(--fonce);
@@ -55,11 +52,7 @@ nav {
     color: var(--fonce);
 }
 
-nav > ul {
-    display: none;
-    list-style-type: none;
-    padding: 10px;
-}
+
 
 h1,
 body,
@@ -73,33 +66,6 @@ h1 {
 }
 
 h1, h2, h3, h4, h5 {
-    color: var(--fonce);
-}
-
-nav > ul a:visited {
-    color: var(--moyen);
-}
-
-nav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-nav a:icon {
-    color: var(--clair);
-    display: block;
-}
-
-nav a:hover {
-    background-color: var(--clair);
-    border: 1px solid var(--fonce);
-    color: var(--fonce);
-}
-
-nav a:visited:hover {
     color: var(--fonce);
 }
 
@@ -187,15 +153,6 @@ span.erreur {
 
 .testAff {
     display: none;
-}
-
-#nav-menu {
-    width: 80px;
-    min-height: calc(100vh - 80px);
-}
-
-#nav-menu.montre {
-    width: 200px;
 }
 
 .invisible {
