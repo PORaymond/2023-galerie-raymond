@@ -137,6 +137,7 @@ if (isset($_SESSION['photo'])) {
                                         </div>
                                         <br>
                                     </div>
+                                    
                                     <div class = "etape">
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
