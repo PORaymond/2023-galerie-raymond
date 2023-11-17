@@ -4,6 +4,13 @@
     --moyen: #3399cc;
 }
 
+html {
+    margin: 0;
+    width: 100%;
+    background-color: black;
+
+}
+
 .logo {
     float: left;
     width: 80px;
@@ -43,6 +50,33 @@ ul {
 
 
 
+.conteneur {
+    width: 100%;
+    background-color: var(--fonce);
+    color: var(--clair);
+}
+
+footer li,
+ul {
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+    padding: 0;
+    text-align: justify;
+}
+
+ul li a,
+ul li a:hover,
+ul li a:active {
+    color: white;
+
+}
+.titre-accueil{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
 .couleur-fond {
     background-color: var(--fonce);
 }
@@ -52,7 +86,11 @@ ul {
     color: var(--fonce);
 }
 
+.bas {
+    padding: 50px;
+    text-align: center;
 
+}
 
 h1,
 body,

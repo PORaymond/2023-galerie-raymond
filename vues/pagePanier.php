@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
+
 <?php
-$titre = "Votre panier";
 include_once __DIR__."/inclusions/fonctions.inc.php";
 ?>
-
-<?php include_once __DIR__ . '/inclusions/contenu-head.php' ?>
-
+<title>Votre panier</title>
+</head>
 <body>
 <?php include __DIR__ . '/inclusions/header.php' ?>
 
@@ -35,8 +32,6 @@ include_once __DIR__."/inclusions/fonctions.inc.php";
 
     </main>
 </div>
-
-
 </body>
 </html>
 

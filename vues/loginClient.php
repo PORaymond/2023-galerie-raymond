@@ -5,12 +5,7 @@ if (session_status() != PHP_SESSION_ACTIVE)
 
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
     <title>LOGIN</title>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style_admin.css">
 </head>
 
 <body>
