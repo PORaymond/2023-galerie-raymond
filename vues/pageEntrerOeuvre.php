@@ -140,7 +140,9 @@ if (isset($_SESSION['photo'])) {
                                     <div>
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
-                                    </div>                                    
+                                    </div>    
+                                        <button id="prevBtn" onclick="prevStep()">Précédent</button>
+                                        <button id="nextBtn" onclick="nextStep()">Suivant</button>                         
                                 </form>
                             </div>
                         </div>
@@ -150,6 +152,9 @@ if (isset($_SESSION['photo'])) {
         </div>
     </main>
 </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
 
