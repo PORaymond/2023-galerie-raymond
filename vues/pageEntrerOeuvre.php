@@ -98,7 +98,7 @@ if (isset($_SESSION['photo'])) {
 
                                     </div>   
                                     
-                                    <div class = "etape invisible">
+                                    <div class = "etape">
                                         <label class="oeuvre" for="date">Date de création</label><br>
                                         <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
                                         class="erreur"><?php echo $_SESSION['errDate'] ?> </span><br>
@@ -117,7 +117,7 @@ if (isset($_SESSION['photo'])) {
 
                                     </div>
 
-                                    <div class = "etape invisible">
+                                    <div class = "etape">
                                         <label class="oeuvre" for="categorie">Catégorie</label><br>
                                         <select name="categorie" id="categorie">
                                             <?php
@@ -137,12 +137,11 @@ if (isset($_SESSION['photo'])) {
                                         </div>
                                         <br>
                                     </div>
-                                    <div class = "etape invisible">
+                                    <div class = "etape">
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
                                     </div>    
-                                        <button id="prevBtn" onclick="prevStep()">Précédent</button>
-                                        <button id="nextBtn" onclick="nextStep()">Suivant</button>                         
+                                                             
                                 </form>
                             </div>
                         </div>
@@ -155,7 +154,10 @@ if (isset($_SESSION['photo'])) {
 
 
     <script src="assets/js/script.js"></script>
-</body>
+    
+    
+</script>
+    </body>
 </html>
 
 
