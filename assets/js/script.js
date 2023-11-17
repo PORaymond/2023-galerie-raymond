@@ -73,3 +73,45 @@ function montrerInputCategorie(){
       nouvCat.style.display = "none";
     }
 }
+
+var currentStep = 0;
+var steps = document.getElementsByClassName("step");
+var prevBtn = document.getElementById("prevBtn");
+var nextBtn = document.getElementById("nextBtn");
+
+function showStep(stepIndex) {
+    for (var i = 0; i < steps.length; i++) {
+        steps[i].classList.add("hidden");
+    }
+    steps[stepIndex].classList.remove("hidden");
+
+    if (stepIndex === 0) {
+        prevBtn.disabled = true;
+    } else {
+        prevBtn.disabled = false;
+    }
+
+    if (stepIndex === steps.length - 1) {
+        nextBtn.disabled = true;
+    } else {
+        nextBtn.disabled = false;
+    }
+}
+
+function prevStep() {
+    if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+    }
+}
+
+function nextStep() {
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    showStep(currentStep);
+});

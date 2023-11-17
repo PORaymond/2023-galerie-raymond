@@ -85,7 +85,7 @@ if (isset($_SESSION['photo'])) {
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <form action="?action=pageValiderOeuvre" method="post">
-                                    <div>
+                                    <div class="etape">
                                         <label class="oeuvre" for="titre">Titre</label><br>
                                         <input type="text" name="titre" id="titre"
                                                value="<?php echo $titreOeuvre ?>"><span
@@ -98,26 +98,26 @@ if (isset($_SESSION['photo'])) {
 
                                     </div>   
                                     
-                                    <div>
+                                    <div class = "etape invisible">
                                         <label class="oeuvre" for="date">Date de création</label><br>
                                         <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
                                         class="erreur"><?php echo $_SESSION['errDate'] ?> </span><br>
                                         <!--Télécharger une photo-->
                                         
-                                        <label class="oeuvre" for="photo"></label><br>
-                                        <button type="button" class="btn couleur-bouton">Télécharger une photo</button>
                                         <br><br>
                                         <label class="oeuvre" for="prix">Prix</label><br>
                                         <input type="number" step="any" name="prix" id="prix"
-                                               value="<?php echo $prix ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errPrix'] ?> </span><br>
-    
+                                        value="<?php echo $prix ?>"><span
+                                        class="erreur"><?php echo $_SESSION['errPrix'] ?> </span><br>
+                                        
+                                        <button type="button" class="btn couleur-bouton">Télécharger une photo</button>
+                                        <label class="oeuvre" for="photo"></label><br>
                                         <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
                                                 class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
 
                                     </div>
 
-                                    <div>
+                                    <div class = "etape invisible">
                                         <label class="oeuvre" for="categorie">Catégorie</label><br>
                                         <select name="categorie" id="categorie">
                                             <?php
@@ -137,10 +137,12 @@ if (isset($_SESSION['photo'])) {
                                         </div>
                                         <br>
                                     </div>
-                                    <div>
+                                    <div class = "etape invisible">
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
-                                    </div>                                    
+                                    </div>    
+                                        <button id="prevBtn" onclick="prevStep()">Précédent</button>
+                                        <button id="nextBtn" onclick="nextStep()">Suivant</button>                         
                                 </form>
                             </div>
                         </div>
@@ -150,6 +152,9 @@ if (isset($_SESSION['photo'])) {
         </div>
     </main>
 </div>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 
