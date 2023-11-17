@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="fr">
 <?php
 include_once __DIR__."/inclusions/fonctions.inc.php";
 $titre = "Votre panier";
