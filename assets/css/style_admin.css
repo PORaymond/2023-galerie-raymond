@@ -43,8 +43,16 @@ ul {
 
 nav {
     overflow: hidden;
-    background-color: var(--fonce);
     position: relative;
+}
+
+.couleur-fond {
+    background-color: var(--fonce);
+}
+
+.couleur-bouton {
+    background-color: var(--clair);
+    color: var(--fonce);
 }
 
 nav > ul {
@@ -88,7 +96,7 @@ nav a:icon {
 nav a:hover {
     background-color: var(--clair);
     border: 1px solid var(--fonce);
-    color: black;
+    color: var(--fonce);
 }
 
 nav a:visited:hover {
@@ -188,7 +196,6 @@ span.erreur {
 
 #nav-menu.montre {
     width: 200px;
-
 }
 
 .invisible {
