@@ -151,16 +151,6 @@ if (isset($_SESSION['photo'])) {
     </main>
 </div>
 </body>
-<script>
-    function montrerInputCategorie(){
-        let nouvCat = document.getElementById("nouvelleCategorie");
-        if (nouvCat.style.display === "none"){
-            nouvCat.style.display ="block";
-        } else {
-          nouvCat.style.display = "none";
-        }
-    }
-</script>
 </html>
 
 

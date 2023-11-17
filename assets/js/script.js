@@ -64,3 +64,12 @@ function enleverOeuvre(idOeuvre, monPrix){
         });
     $(".casepanier" + idOeuvre).remove();
 }
+
+function montrerInputCategorie(){
+    let nouvCat = document.getElementById("nouvelleCategorie");
+    if (nouvCat.style.display === "none"){
+        nouvCat.style.display ="block";
+    } else {
+      nouvCat.style.display = "none";
+    }
+}
