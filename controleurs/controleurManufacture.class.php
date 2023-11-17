@@ -48,6 +48,12 @@ class Manufacture
             $controleur = new FactureCommande();
         } elseif ($action == "pageEntrerOeuvre") {
             $controleur = new EntrerOeuvre();
+        } elseif ($action == "pageEntrerOeuvreEtape2") {
+            $controleur = new EntrerOeuvreEtape2();
+        } elseif ($action == "pageEntrerOeuvreEtape3") {
+            $controleur = new EntrerOeuvreEtape3();
+        } elseif ($action == "pageEntrerOeuvreEtape4") {
+            $controleur = new EntrerOeuvreEtape4();
         } elseif ($action == "pageValiderOeuvre") {
             $controleur = new ValiderOeuvre();
         } elseif ($action == "pageInsererOeuvre") {

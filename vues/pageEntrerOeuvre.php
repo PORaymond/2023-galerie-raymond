@@ -84,7 +84,7 @@ if (isset($_SESSION['photo'])) {
                     <div class="card couleur-fond text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
-                                <form action="?action=pageValiderOeuvre" method="post">
+                                <form action="?action=pageEntrerOeuvreEtape2" method="post">
                                     <div class="etape">
                                         <label class="oeuvre" for="titre">Titre</label><br>
                                         <input type="text" name="titre" id="titre"
@@ -96,53 +96,7 @@ if (isset($_SESSION['photo'])) {
                                                value="<?php echo $descOeuvre ?>"><span
                                                 class="erreur"><?php echo $_SESSION['errDescOeuvre'] ?> </span><br>
 
-                                    </div>   
-                                    
-                                    <div class = "etape">
-                                        <label class="oeuvre" for="date">Date de création</label><br>
-                                        <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
-                                        class="erreur"><?php echo $_SESSION['errDate'] ?> </span><br>
-                                        <!--Télécharger une photo-->
-                                        
-                                        <br><br>
-                                        <label class="oeuvre" for="prix">Prix</label><br>
-                                        <input type="number" step="any" name="prix" id="prix"
-                                        value="<?php echo $prix ?>"><span
-                                        class="erreur"><?php echo $_SESSION['errPrix'] ?> </span><br>
-                                        
-                                        <button type="button" class="btn couleur-bouton">Télécharger une photo</button>
-                                        <label class="oeuvre" for="photo"></label><br>
-                                        <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
-
-                                    </div>
-
-                                    <div class = "etape">
-                                        <label class="oeuvre" for="categorie">Catégorie</label><br>
-                                        <select name="categorie" id="categorie">
-                                            <?php
-                                            // Remplir l’élément select avec le catégories de ma base de données 
-                                                foreach ($tableau_categorie as $entry) {
-                                                    $value = $entry->getIdCategorie();
-                                                    $label = $entry->getDescCategorie();
-                                                    echo "<option value=\"$value\">$label</option>";
-                                                }
-                                            ?>
-                                        </select>
-                                        <br><br>
-                                        <button onclick="montrerInputCategorie()" type="button" class="btn couleur-bouton">nouvelle catégorie</button>
-                                        <br><br>
-                                        <div id="nouvelleCategorie" style="display : none;">
-                                            <input type="text" name="catégoies" id="cat" value="">
-                                        </div>
-                                        <br>
-                                    </div>
-
-                                    <div class = "etape">
-                                        <!-- résumé de l’ajout-->
-                                        <input type="submit" value="Ajouter">
-                                    </div>    
-                                                             
+                                    </div>                         
                                 </form>
                             </div>
                         </div>
