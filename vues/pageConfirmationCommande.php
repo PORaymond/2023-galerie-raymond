@@ -3,12 +3,8 @@
 $titre = "Confirmer votre commande";
 
 ?>
-<!doctype html>
-<html lang="fr">
-
-<?php
-include_once "vues/inclusions/contenu-head.php"
-?>
+    <title><?php echo $titre ?></title>
+</head>
 <body>
 
 <?php include_once "vues/inclusions/header.php"; ?>

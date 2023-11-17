@@ -16,7 +16,7 @@
 <div class="conteneur">
 
     <div class="entete">
-        <h1>Bienvenue à la galerie Raymond</h1>
+        <h1 class ="titre-accueil">Bienvenue à la galerie Raymond</h1>
     </div>
 
     <div class="container-fluid">

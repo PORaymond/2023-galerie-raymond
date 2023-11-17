@@ -1,14 +1,9 @@
 <!-- On redirige vers l'inde du site si on essaie d'avoir une accès direct -->
-<?php if (!isset($controleur)) header("Location: ..\index.php");
-
-$titre = "Votre facture";
+<?php if (!isset($controleur)) header("Location: ..\index.php"); 
+$titre = "Votre Facture";
 ?>
-
-<!DOCTYPE html>
-
-<html lang="fr">
-
-<?php include_once "vues/inclusions/contenu-head.php" ?>
+    <title><?php echo $titre ?></title>
+</head>
 
 <body>
 <?php
