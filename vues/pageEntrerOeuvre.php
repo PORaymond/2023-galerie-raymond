@@ -153,6 +153,6 @@ if (isset($_SESSION['photo'])) {
 </div>
 <script src="assets/js/script.js"></script>
 </body>
-</html>
+
 
 
