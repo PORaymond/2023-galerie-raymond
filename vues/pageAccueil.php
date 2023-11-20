@@ -3,11 +3,10 @@
 //if (session_status() == PHP_SESSION_NONE){
 //    session_start();
 //}
-
+ $titre = "Bienvenue à la galerie Raymond";
 ?>
 
-    <meta charset="UTF-8"/>
-    <title>Bienvenue à la galerie Raymond</title>
+    <title><?php echo ($titre);?></title>
 
 </head>
 
@@ -16,7 +15,7 @@
 <div class="conteneur">
 
     <div class="entete">
-        <h1 class ="titre-accueil">Bienvenue à la galerie Raymond</h1>
+        <h1 class ="titre-accueil"><?php echo ($titre);?></h1>
     </div>
 
     <div class="container-fluid">
