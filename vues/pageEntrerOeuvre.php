@@ -74,6 +74,11 @@ if (isset($_SESSION['photo'])) {
                                         <input type="text" name="desc_oeuvre" id="desc_oeuvre"
                                                value="<?php echo $descOeuvre ?>"><span
                                                 class="erreur"><?php echo $_SESSION['errDescOeuvre'] ?> </span><br>
+                                        <div class = "etape">
+                                        <!-- résumé de l’ajout-->
+                                        <
+                                            <input type="submit" value="Suivant">
+                                        </div>  
 
                                     </div>                         
                                 </form>
