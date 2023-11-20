@@ -1,7 +1,7 @@
 <?php
 include_once(__DIR__ . "/fonctions.inc.php");
 ?>
-<nav id="nav-menu">
+<nav id="nav-menu" class="couleur-fond">
     <a href="javascript:void(0)" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i></a>
     <?php
