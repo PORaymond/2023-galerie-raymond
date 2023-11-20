@@ -23,8 +23,11 @@ if (session_status() == PHP_SESSION_NONE)
                 <div class="card bg-dark text-white" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
                         <div class="mb-md-5 mt-md-4 pb-5">
+
                             <h2 class="fw-bold mb-2">Connexion</h2>
+
                             <p class="text-white-50 mb-5">Administrateur</p>
+                            
                             <form action="?action=seConnecterAdmin" method="post" class="form-outline mb-4">
                                 <input type="text" id="nom_admin" name="nom_admin"
                                        placeholder="Nom d'utilisateur" class="form-control form-control-lg text-center"><br>
@@ -35,6 +38,7 @@ if (session_status() == PHP_SESSION_NONE)
                                     afficherErreurs($controleur->getMessagesErreur());?>
                                 </p>
                             </form>
+
                         </div>
                     </div>
                 </div>
