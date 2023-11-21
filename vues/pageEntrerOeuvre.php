@@ -65,6 +65,7 @@ if (isset($_SESSION['photo'])) {
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <form action="?action=pageEntrerOeuvreEtape2" method="post">
                                     <div class="etape">
+                                        
                                         <label class="oeuvre" for="titre">Titre</label><br>
                                         <input type="text" name="titre" id="titre"
                                                value="<?php echo $titreOeuvre ?>"><span
@@ -74,12 +75,11 @@ if (isset($_SESSION['photo'])) {
                                         <input type="text" name="desc_oeuvre" id="desc_oeuvre"
                                                value="<?php echo $descOeuvre ?>"><span
                                                 class="erreur"><?php echo $_SESSION['errDescOeuvre'] ?> </span><br>
-                                        <div class = "etape">
-                                        <!-- résumé de l’ajout-->
-                                        <
+                                            
+                                        <div>
+                                            <br>
                                             <input type="submit" value="Suivant">
                                         </div>  
-
                                     </div>                         
                                 </form>
                             </div>
