@@ -64,19 +64,7 @@ if (isset($_SESSION['photo'])) {
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <form action="?action=pageValiderOeuvre" method="post">
-                                    <div class="etape">
-                                        <label class="oeuvre" for="titre">Titre</label><br>
-                                        <input type="text" name="titre" id="titre"
-                                               value="<?php echo $titreOeuvre ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errTitre'] ?> </span><br>
-    
-                                        <label class="oeuvre" for="desc_oeuvre">Description</label><br>
-                                        <input type="text" name="desc_oeuvre" id="desc_oeuvre"
-                                               value="<?php echo $descOeuvre ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errDescOeuvre'] ?> </span><br>
-
-                                    </div>   
-                                    
+                                                                        
                                     <div class = "etape">
                                         <label class="oeuvre" for="date">Date de création</label><br>
                                         <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
