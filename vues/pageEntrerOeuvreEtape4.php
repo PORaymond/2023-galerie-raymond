@@ -65,38 +65,6 @@ $titre = "Nouvelle oeuvre étape 4";
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <form action="?action=pageValiderOeuvre" method="post">
-                                    <div class="etape">
-                                        <label class="oeuvre" for="titre">Titre</label><br>
-                                        <input type="text" name="titre" id="titre"
-                                               value="<?php echo $titreOeuvre ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errTitre'] ?> </span><br>
-    
-                                        <label class="oeuvre" for="desc_oeuvre">Description</label><br>
-                                        <input type="text" name="desc_oeuvre" id="desc_oeuvre"
-                                               value="<?php echo $descOeuvre ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errDescOeuvre'] ?> </span><br>
-
-                                    </div>   
-                                    
-                                    <div class = "etape">
-                                        <label class="oeuvre" for="date">Date de création</label><br>
-                                        <input type="date" name="date" id="date" value="<?php echo $date ?>"><span
-                                        class="erreur"><?php echo $_SESSION['errDate'] ?> </span><br>
-                                        <!--Télécharger une photo-->
-                                        
-                                        <br><br>
-                                        <label class="oeuvre" for="prix">Prix</label><br>
-                                        <input type="number" step="any" name="prix" id="prix"
-                                        value="<?php echo $prix ?>"><span
-                                        class="erreur"><?php echo $_SESSION['errPrix'] ?> </span><br>
-                                        
-                                        <button type="button" class="btn couleur-bouton">Télécharger une photo</button>
-                                        <label class="oeuvre" for="photo"></label><br>
-                                        <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
-
-                                    </div>
-
                                     <div class = "etape">
                                         <label class="oeuvre" for="categorie">Catégorie</label><br>
                                         <select name="categorie" id="categorie">
@@ -121,6 +89,12 @@ $titre = "Nouvelle oeuvre étape 4";
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
                                     </div>    
+                                    <?php 
+                                    var_dump($_SESSION[['titre']]);
+                                    var_dump($_SESSION['prix']);
+                                    var_dump($_SESSION['date']);
+                                    var_dump($_SESSION['photo']);
+                                    ?>
                                                              
                                 </form>
                             </div>
