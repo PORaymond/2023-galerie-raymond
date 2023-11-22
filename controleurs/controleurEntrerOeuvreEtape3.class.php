@@ -10,6 +10,11 @@ class EntrerOeuvreEtape3 extends Controleur
 
     public function executerAction()
     {
-        return "pageEntrerOeuvreEtape3";
+        if( 1 == 0 )
+        {
+            return "pageEntrerOeuvreEtape3";
+        } else {
+            return "pageEntrerOeuvreEtape4";
+        }
     }
 }

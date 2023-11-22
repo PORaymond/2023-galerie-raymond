@@ -63,7 +63,7 @@ if (isset($_SESSION['photo'])) {
                     <div class="card couleur-fond text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
-                                <form action="?action=pageValiderOeuvre" method="post">
+                                <form action="?action=pageValiderOeuvre3" method="post">
                                                                         
                                     <div class = "etape">
                                         <label class="oeuvre" for="date">Date de création</label><br>
@@ -81,34 +81,9 @@ if (isset($_SESSION['photo'])) {
                                         <label class="oeuvre" for="photo"></label><br>
                                         <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
                                                 class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
+                                                <input type="submit" value="Ajouter">
 
-                                    </div>
-
-                                    <div class = "etape">
-                                        <label class="oeuvre" for="categorie">Catégorie</label><br>
-                                        <select name="categorie" id="categorie">
-                                            <?php
-                                            // Remplir l’élément select avec le catégories de ma base de données 
-                                                foreach ($tableau_categorie as $entry) {
-                                                    $value = $entry->getIdCategorie();
-                                                    $label = $entry->getDescCategorie();
-                                                    echo "<option value=\"$value\">$label</option>";
-                                                }
-                                            ?>
-                                        </select>
-                                        <br><br>
-                                        <button onclick="montrerInputCategorie()" type="button" class="btn couleur-bouton">nouvelle catégorie</button>
-                                        <br><br>
-                                        <div id="nouvelleCategorie" style="display : none;">
-                                            <input type="text" name="catégoies" id="cat" value="">
-                                        </div>
-                                        <br>
-                                    </div>
-                                    <div class = "etape">
-                                        <!-- résumé de l’ajout-->
-                                        <input type="submit" value="Ajouter">
-                                    </div>    
-                                                             
+                                    </div>                  
                                 </form>
                             </div>
                         </div>
