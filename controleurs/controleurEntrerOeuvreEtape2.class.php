@@ -33,17 +33,15 @@ class EntrerOeuvreEtape2 extends Controleur
         $_SESSION['titre'] = "";
         $_SESSION['descOeuvre'] = "";
 
-        $errTitre = "";
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (empty($_POST["titre"])) {
-                $errTitre = "Le Titre doit être fourni";
+                $_SESSION['errTitre'] = "Le Titre doit être fourni";
             } else {
                 $_SESSION['titre'] = testerEntree($_POST['titre']);
             }
             if (!empty($_POST["desc_oeuvre"])) {
                 $_SESSION['descOeuvre'] = testerEntree($_POST["desc_oeuvre"]);
             }
-            $_SESSION['errTitre'] = $errTitre;   
         }
     }
 }

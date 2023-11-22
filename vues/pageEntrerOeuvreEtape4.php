@@ -2,26 +2,10 @@
 <?php
 include_once(__DIR__."/../modele/DAO/categorieDAO.class.php");
 $tableau_categorie = CategorieDao::chercherTous();
-$titre = "Ajouter une oeuvre";
+$titre = "Nouvelle oeuvre étape 4";
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-}
-// Vérification des messages d’erreur
-if (!isset($_SESSION['errTitre'])) {
-    $_SESSION['errTitre'] = "";
-}
-if (!isset($_SESSION['errDescOeuvre'])) {
-    $_SESSION['errDescOeuvre'] = "";
-}
-if (!isset($_SESSION['errDate'])) {
-    $_SESSION['errDate'] = "";
-}
-if (!isset($_SESSION['errPhoto'])) {
-    $_SESSION['errPhoto'] = "";
-}
-if (!isset($_SESSION['errPrix'])) {
-    $_SESSION['errPrix'] = "";
 }
 
 //Réinitialisation des variables globale associées aux propriétés de la nouvelle oeuvre
@@ -30,12 +14,7 @@ $descOeuvre = "";
 $prix = "";
 $date = "";
 $photo = "";
-if (isset($_SESSION['titre'])) {
-    $titreOeuvre = $_SESSION['titre'];
-}
-if (isset($_SESSION['descOeuvre'])) {
-    $descOeuvre = $_SESSION['descOeuvre'];
-}
+
 if (isset($_SESSION['prix'])) {
     $prix = $_SESSION['prix'];
 }
@@ -47,7 +26,7 @@ if (isset($_SESSION['photo'])) {
 }
 //Appel de la fonction categorieDao::chercherTous()
 
-$titre = "Nouvelle oeuvre étape 4";
+
 ?>
     <title><?php echo $titre ?></title>
 </head>
@@ -85,12 +64,10 @@ $titre = "Nouvelle oeuvre étape 4";
                                         </div>
                                         <br>
                                     </div>
-                                    <div class = "etape">
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
-                                    </div>    
                                     <?php 
-                                    var_dump($_SESSION[['titre']]);
+                                    var_dump($_SESSION['titre']);
                                     var_dump($_SESSION['prix']);
                                     var_dump($_SESSION['date']);
                                     var_dump($_SESSION['photo']);

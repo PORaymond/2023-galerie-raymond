@@ -7,23 +7,6 @@ $titre = "Ajouter une oeuvre";
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-// Vérification des messages d’erreur
-if (!isset($_SESSION['errTitre'])) {
-    $_SESSION['errTitre'] = "";
-}
-if (!isset($_SESSION['errDescOeuvre'])) {
-    $_SESSION['errDescOeuvre'] = "";
-}
-if (!isset($_SESSION['errDate'])) {
-    $_SESSION['errDate'] = "";
-}
-if (!isset($_SESSION['errPhoto'])) {
-    $_SESSION['errPhoto'] = "";
-}
-if (!isset($_SESSION['errPrix'])) {
-    $_SESSION['errPrix'] = "";
-}
-
 //Réinitialisation des variables globale associées aux propriétés de la nouvelle oeuvre
 $titreOeuvre = "";
 $descOeuvre = "";
