@@ -7,7 +7,7 @@
 include_once(__DIR__ . "/controleurManufacture.class.php");
 include_once(__DIR__ . "/../modele/DAO/OeuvreDAO.class.php");
 
-class ConfirmerSuppressionOeuvre extends Controleur
+class CtlrConfirmerSuppressionOeuvre extends Controleur
 {
     public function __construct()
     {

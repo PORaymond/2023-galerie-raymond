@@ -8,7 +8,7 @@ include_once(__DIR__ . "/../modele/DAO/OeuvreDAO.class.php");
 include_once(__DIR__ . "/../modele/oeuvre.class.php");
 include_once(__DIR__ . "/controleur.abstract.class.php");
 
-class EnregistrerModification extends Controleur
+class CtlrEnregistrerModification extends Controleur
 {
     public function __construct()
     {

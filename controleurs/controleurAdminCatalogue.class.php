@@ -8,7 +8,7 @@
 include_once("controleurs/controleur.abstract.class.php");
 include_once("modele/DAO/OeuvreDAO.class.php");
 
-class AdminCatalogue extends Controleur
+class CtlrAdminCatalogue extends Controleur
 {
     // ******************* Attributs
     private $tabOeuvres;

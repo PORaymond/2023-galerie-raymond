@@ -1,7 +1,7 @@
 <?php
 include_once("controleur.abstract.class.php");
 
-class EntrerOeuvreEtape4 extends Controleur
+class CtlrEntrerOeuvreEtape4 extends Controleur
 {
     public function __construct()
     {
@@ -10,6 +10,14 @@ class EntrerOeuvreEtape4 extends Controleur
 
     public function executerAction()
     {
+        $this->validerEtape4();
+        if(!empty($_SESSION['errCategorie'])){
+            return "pageEntreOeuverEtape4";
+        }
         return "pageEntrerOeuvreEtape4";
+    }
+
+    public function validerEtape4(){
+        $_SESSION['errCategorie'] = "";
     }
 }

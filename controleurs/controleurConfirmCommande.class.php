@@ -13,7 +13,7 @@ include_once(__DIR__ . "/../modele/oeuvre.class.php");
 include_once(__DIR__ . "/../modele/DAO/commandeDAO.class.php");
 include_once(__DIR__ . "/../modele/commande.class.php");
 
-class ConfirmCommande extends Controleur
+class CtlrConfirmCommande extends Controleur
 {
     private $tabCommande;
     private $tabOeuvres;

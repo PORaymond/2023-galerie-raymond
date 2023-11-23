@@ -1,6 +1,6 @@
 <?php
 
-class AjouterOeuvreAuPanier extends Controleur
+class CtlrAjouterOeuvreAuPanier extends Controleur
 {
     public function __construct()
     {

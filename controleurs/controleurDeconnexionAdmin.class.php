@@ -5,7 +5,7 @@
 // Auteurs       : Olivier Raymond et Elisabeth Tremblay
 // *****************************************************************************************
 
-class DeconnexionAdmin extends Controleur
+class CtlrDeconnexionAdmin extends Controleur
 {
     public function __construct()
     {

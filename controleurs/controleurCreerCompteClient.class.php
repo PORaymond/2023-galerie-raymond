@@ -9,7 +9,7 @@ include_once(__DIR__ . "/controleur.abstract.class.php");
 include_once(__DIR__ . "/../modele/DAO/ClientDAO.class.php");
 include_once(__DIR__ . "/../modele/client.class.php");
 
-class CreerCompteClient extends Controleur
+class CtlrCreerCompteClient extends Controleur
 {
     private $tabClients;
 

@@ -6,7 +6,7 @@
  * Date : 3 octobre 2022
  * Auteurs : Elisabeth Tremblay, Olivier Raymond
  ****************************************************************************************/
-class LoginAdmin extends Controleur
+class CtlrLoginAdmin extends Controleur
 {
     public function __construct()
     {

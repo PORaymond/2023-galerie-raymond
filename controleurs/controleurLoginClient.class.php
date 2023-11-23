@@ -1,7 +1,7 @@
 <?php
 include_once("controleurs/controleur.abstract.class.php");
 
-class LoginClient extends Controleur
+class CtlrLoginClient extends Controleur
 {
     public function __construct()
     {

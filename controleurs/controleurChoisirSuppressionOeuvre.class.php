@@ -7,7 +7,7 @@
 include_once(__DIR__ . "/controleurManufacture.class.php");
 include_once(__DIR__ . "/../modele/DAO/OeuvreDAO.class.php");
 
-class ChoisirSuppressionOeuvre extends Controleur
+class CtlrChoisirSuppressionOeuvre extends Controleur
 {
     private $tabOeuvres;
 

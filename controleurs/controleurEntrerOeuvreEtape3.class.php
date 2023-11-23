@@ -1,7 +1,7 @@
 <?php
 include_once("controleur.abstract.class.php");
 
-class EntrerOeuvreEtape3 extends Controleur
+class CtlrEntrerOeuvreEtape3 extends Controleur
 {
     public function __construct()
     {

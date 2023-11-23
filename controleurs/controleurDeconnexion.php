@@ -5,7 +5,7 @@ include_once("controleurs/controleur.abstract.class.php");
 // Date          : 21 octobre 2022
 // Auteurs       : Elisabeth Tremblay
 // *****************************************************************************************
-class Deconnexion extends Controleur
+class CtlrDeconnexion extends Controleur
 {
     public function __construct()
     {

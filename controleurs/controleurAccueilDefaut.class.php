@@ -6,7 +6,7 @@
 // Auteurs       : Olivier Raymond et Elisabeth Tremblay
 // *****************************************************************************************
 include_once("controleurs/controleur.abstract.class.php");
-class AccueilDefaut extends Controleur
+class CtlrAccueilDefaut extends Controleur
 {
 
     // ******************* Constructeur vide

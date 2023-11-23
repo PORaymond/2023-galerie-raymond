@@ -10,7 +10,7 @@ include_once(__DIR__ . "/controleur.abstract.class.php");
 include_once(__DIR__ . "/../modele/DAO/ClientDAO.class.php");
 include_once(__DIR__ . "/../modele/client.class.php");
 // TODO Changer le nom du controlleur
-class NouveauClient extends Controleur
+class CtlrNouveauClient extends Controleur
 {
     private $tabClients;
 

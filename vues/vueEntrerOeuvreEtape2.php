@@ -62,9 +62,9 @@ if (isset($_SESSION['photo'])) {
                                         
                                         <button type="button" class="btn couleur-bouton">Télécharger une photo</button>
                                         <label class="oeuvre" for="photo"></label><br>
-                                        <input type="text" name="photo" id="photo" value="<?php echo $photo ?>"><span
-                                                class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
-                                                <input type="submit" value="Ajouter">
+                                        <input type="text" name="photo" id="photo" value="<?php echo $photo ?>">
+                                            <span class="erreur"><?php echo $_SESSION['errPhoto'] ?> </span><br>
+                                        <input type="submit" value="Ajouter">
 
                                     </div>                  
                                 </form>

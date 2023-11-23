@@ -3,7 +3,7 @@ include_once(__DIR__ . "/../modele/DAO/OeuvreDAO.class.php");
 include_once(__DIR__ . "/../modele/oeuvre.class.php");
 include_once(__DIR__ . "/controleur.abstract.class.php");
 
-class ValiderModifOeuvre extends Controleur
+class CtlrValiderModifOeuvre extends Controleur
 {
     public function __construct()
     {

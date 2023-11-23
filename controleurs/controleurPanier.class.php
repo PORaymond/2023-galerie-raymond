@@ -1,6 +1,6 @@
 <?php
 
-class Panier extends Controleur
+class CtlrPanier extends Controleur
 {
     public function __construct()
     {

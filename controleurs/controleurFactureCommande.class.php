@@ -13,7 +13,7 @@ include_once(__DIR__ . "/../modele/oeuvre.class.php");
 include_once(__DIR__ . "/../modele/DAO/commandeDAO.class.php");
 include_once(__DIR__ . "/../modele/commande.class.php");
 
-class FactureCommande extends Controleur
+class CtlrFactureCommande extends Controleur
 {
     // ******************* Attributs
     private $tabCommande;

@@ -9,7 +9,7 @@ include_once("controleurs/controleur.abstract.class.php");
 include_once(__DIR__ . "/../modele/DAO/AdministrateurDAO.class.php");
 include_once(__DIR__ . "/../modele/administrateur.class.php");
 
-class SeConnecterAdmin extends Controleur
+class CtlrSeConnecterAdmin extends Controleur
 {
 
     // ******************* Constructeur vide

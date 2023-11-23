@@ -8,7 +8,7 @@
 include_once("controleurs/controleur.abstract.class.php");
 include_once("modele/DAO/OeuvreDAO.class.php");
 
-class ModifierOeuvre extends Controleur
+class CtlrModifierOeuvre extends Controleur
 {
     private $tabOeuvres;
 

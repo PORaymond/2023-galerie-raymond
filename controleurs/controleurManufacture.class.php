@@ -44,65 +44,65 @@ class Manufacture
         $controleur = null;
         // actions liées à l’utilisateur anonyme
         if ($action == "accueilCatalogue") {
-            $controleur = new AccueilCatalogue();
+            $controleur = new CtlrAccueilCatalogue();
         } elseif ($action == "nouveauClient") {
-            $controleur = new NouveauClient();
+            $controleur = new CtlrNouveauClient();
         // actions liées à l’admin
         // actions liées au client
-        } elseif ($action == "pageFactureCommande") {
-            $controleur = new FactureCommande();
-        } elseif ($action == "pageEntrerOeuvre") {
-            $controleur = new EntrerOeuvre();
-        } elseif ($action == "pageEntrerOeuvreEtape2") {
-            $controleur = new EntrerOeuvreEtape2();
-        } elseif ($action == "pageEntrerOeuvreEtape3") {
-            $controleur = new EntrerOeuvreEtape3();
-        } elseif ($action == "pageEntrerOeuvreEtape4") {
-            $controleur = new EntrerOeuvreEtape4();
-        } elseif ($action == "pageValiderOeuvre") {
-            $controleur = new ValiderOeuvre();
-        } elseif ($action == "pageInsererOeuvre") {
-            $controleur = new InsererOeuvre();
+        } elseif ($action == "factureCommande") {
+            $controleur = new CtlrFactureCommande();
+        } elseif ($action == "entrerOeuvre") {
+            $controleur = new CtlrEntrerOeuvre();
+        } elseif ($action == "entrerOeuvreEtape2") {
+            $controleur = new CtlrEntrerOeuvreEtape2();
+        } elseif ($action == "entrerOeuvreEtape3") {
+            $controleur = new CtlrEntrerOeuvreEtape3();
+        } elseif ($action == "entrerOeuvreEtape4") {
+            $controleur = new CtlrEntrerOeuvreEtape4();
+        } elseif ($action == "validerOeuvre") {
+            $controleur = new CtlrValiderOeuvre();
+        } elseif ($action == "insererOeuvre") {
+            $controleur = new CtlrInsererOeuvre();
         } elseif ($action == "loginClient") {
-            $controleur = new LoginClient();
+            $controleur = new CtlrLoginClient();
         } elseif ($action == "seConnecter") {
-            $controleur = new SeConnecter();
+            $controleur = new CtlrSeConnecter();
         } elseif ($action == "seConnecterAdmin") {
-            $controleur = new SeConnecterAdmin();
+            $controleur = new CtlrSeConnecterAdmin();
         } elseif ($action == "deconnexion") {
-            $controleur = new Deconnexion();
-        } elseif ($action == "pageAdminCatalogue") {
-            $controleur = new AdminCatalogue();
+            $controleur = new CtlrDeconnexion();
+        } elseif ($action == "adminCatalogue") {
+            $controleur = new CtlrAdminCatalogue();
         } elseif ($action == "loginAdmin") {
-            $controleur = new LoginAdmin();
+            $controleur = new CtlrLoginAdmin();
 
-        } elseif ($action == "pageModifierOeuvre") {
-            $controleur = new ModifierOeuvre();
-        } elseif ($action == "pageConfirmerModifOeuvre") {
-            $controleur = new ConfirmerModifOeuvre();
-        } elseif ($action == "pageValiderModifOeuvre") {
-            $controleur = new ValiderModifOeuvre();
+        } elseif ($action == "modifierOeuvre") {
+            $controleur = new CtlrModifierOeuvre();
+        } elseif ($action == "confirmerModifOeuvre") {
+            $controleur = new CtlrConfirmerModifOeuvre();
+        } elseif ($action == "validerModifOeuvre") {
+            $controleur = new CtlrValiderModifOeuvre();
         } elseif ($action == "enregistrerModification") {
-            $controleur = new EnregistrerModification();
+            $controleur = new CtlrEnregistrerModification();
 
-        } elseif ($action == "pageChoisirSuppressionOeuvre") {
-            $controleur = new ChoisirSuppressionOeuvre();
-        } elseif ($action == "pageConfirmerSuppressionOeuvre") {
-            $controleur = new ConfirmerSuppressionOeuvre();
+        } elseif ($action == "choisirSuppressionOeuvre") {
+            $controleur = new CtlrChoisirSuppressionOeuvre();
+        } elseif ($action == "confirmerSuppressionOeuvre") {
+            $controleur = new CtlrConfirmerSuppressionOeuvre();
         } elseif ($action == "suppressionOeuvre") {
-            $controleur = new SuppressionOeuvre();
+            $controleur = new CtlrSuppressionOeuvre();
         } elseif ($action == "deconnexionAdmin") {
-            $controleur = new deconnexionAdmin();
+            $controleur = new CtlrdeconnexionAdmin();
         } elseif ($action == "creerCompteClient") {
-            $controleur = new CreerCompteClient();
+            $controleur = new CtlrCreerCompteClient();
         } elseif ($action == "confirmerCommande") {
-            $controleur = new ConfirmCommande();
+            $controleur = new CtlrConfirmCommande();
         } elseif ($action == "ajouterOeuvreAuPanier") {
-            $controleur = new AjouterOeuvreAuPanier();
-        } elseif ($action == "pagePanier") {
-            $controleur = new Panier();
+            $controleur = new CtlrAjouterOeuvreAuPanier();
+        } elseif ($action == "panier") {
+            $controleur = new CtlrPanier();
         } else {
-            $controleur = new AccueilDefaut();
+            $controleur = new CtlrAccueilDefaut();
         }
         return $controleur;
     }

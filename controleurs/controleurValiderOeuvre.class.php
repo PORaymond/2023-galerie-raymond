@@ -1,7 +1,7 @@
 <?php
 include_once("vues/inclusions/fonctions.inc.php");
 
-class ValiderOeuvre extends Controleur
+class CtlrValiderOeuvre extends Controleur
 {
     public function __construct()
     {

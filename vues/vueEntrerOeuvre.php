@@ -9,26 +9,13 @@ if (session_status() == PHP_SESSION_NONE) {
 //Réinitialisation des variables globales associées aux propriétés de la nouvelle oeuvre
 $titreOeuvre = "";
 $descOeuvre = "";
-$prix = "";
-$date = "";
-$photo = "";
 if (isset($_SESSION['titre'])) {
     $titreOeuvre = $_SESSION['titre'];
 }
 if (isset($_SESSION['descOeuvre'])) {
     $descOeuvre = $_SESSION['descOeuvre'];
 }
-if (isset($_SESSION['prix'])) {
-    $prix = $_SESSION['prix'];
-}
-if (isset($_SESSION['date'])) {
-    $date = $_SESSION['date'];
-}
-if (isset($_SESSION['photo'])) {
-    $photo = $_SESSION['photo'];
-}
-//Appel de la fonction categorieDao::chercherTous()
-    $titre = "Nouvelle oeuvre première étape"
+    $titre = "Nouvelle oeuvre I";
 ?>
 
 <title><?php echo $titre ?></title>
@@ -47,7 +34,7 @@ if (isset($_SESSION['photo'])) {
                     <div class="card couleur-fond text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
-                                <form action="?action=pageEntrerOeuvreEtape2" method="post">
+                                <form action="?action=EntrerOeuvreEtape2" method="post">
                                     <div class="etape">
                                         
                                         <label class="oeuvre" for="titre">Titre</label><br>
