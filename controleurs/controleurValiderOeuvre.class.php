@@ -16,7 +16,7 @@ class CtlrValiderOeuvre extends Controleur
 
     public function validerOeuvre()
     {
-        session_start();
+        //session_start();
 
         /**
          * Cette fonction prend un paramètre en entrée et le débarasse des espaces et slashes inutiles

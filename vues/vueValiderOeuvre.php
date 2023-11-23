@@ -7,7 +7,7 @@ $prix = 0;
 $date = "";
 $photo = "";
 $categorie = "";
-
+$titre = "Nouvelle oeuvre - validation";
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -15,7 +15,7 @@ if (session_status() == PHP_SESSION_NONE) {
     if (empty($_SESSION['titre']) || empty($_SESSION['prix']) || empty($_SESSION['date']) || empty($_SESSION['photo'])) {
         header("Location: ?action=entrerOeuvre");
 
-    }
+    }*/
     if (isset($_SESSION)) {
         $titreOeuvre = $_SESSION['titre'];
         $descOeuvre = $_SESSION['descOeuvre'];
@@ -25,7 +25,7 @@ if (session_status() == PHP_SESSION_NONE) {
         $categorie = $_SESSION['categorie'];
     }
 
-$titre = "Valider l’entrée de l'oeuvre";*/
+$titre = "Valider l’entrée de l'oeuvre";
 ?>
     <title><?php echo $titre ?></title>
 </head>
@@ -65,10 +65,10 @@ $titre = "Valider l’entrée de l'oeuvre";*/
         </table>
 
 
-        <form style="display: inline" action="?action=pageInsererOeuvre" method="post">
+        <form style="display: inline" action="?action=insererOeuvre" method="post">
             <input type="submit" value="Confirmer">
         </form>
-        <form style="display: inline" action="?action=pageEntrerOeuvre" method="post">
+        <form style="display: inline" action="?action=entrerOeuvre" method="post">
             <input type="submit" value="Corriger">
         </form>
     </main>
