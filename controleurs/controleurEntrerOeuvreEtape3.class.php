@@ -36,6 +36,9 @@ class EntrerOeuvreEtape3 extends Controleur
             } else {
                 $_SESSION['date'] = testerEntree($_POST["date"]);
             }
+            if (!empty($_POST['photo'])) {
+                $_SESSION['photo'] = testerEntree($_POST['photo']);
+            }
 
             $_SESSION['errPrix'] = $errPrix;
             $_SESSION['errDate'] = $errDate;
