@@ -25,7 +25,7 @@ class CtlrSeConnecterAdmin extends Controleur
         //----------------------------- VÉRIFIER LA VALIDITÉ DE LA SESSION  -----------
         if ($this->acteur == "admin") {
             array_push($this->messagesErreur, "Vous êtes déjà connecté.");
-            return "pageAdminCatalogue";
+            return "vueAdminCatalogue";
         }
         //----------------------------- VÉRIFIER LA VALIDITÉ DES POSTS ---------------
 
@@ -33,19 +33,19 @@ class CtlrSeConnecterAdmin extends Controleur
             $adminLogin = AdministrateurDAO::chercherLogin($_POST['nom_admin']);
             if ($adminLogin == null) {
                 array_push($this->messagesErreur, "Cet administrateur n'existe pas.");
-                return "loginAdmin";
+                return "vueLoginAdmin";
             } elseif (!($adminLogin->getMdPasse() === ($_POST['mot_passe']))) {
                 array_push($this->messagesErreur, "Le mot de passe est incorrect.");
-                return "loginAdmin";
+                return "vueLoginAdmin";
             } else {
                 $this->acteur = "admin";
                 $_SESSION['utilisateurConnecte'] = "admin";
                 $_SESSION['bienvenueAdmin'] = $adminLogin->getPrenom() . " " . $adminLogin->getNom();
 
-                return "pageAdminCatalogue";
+                return "vueAdminCatalogue";
             }
         }
 
-        return "pageAdminCatalogue";
+        return "vueAdminCatalogue";
     }
 }

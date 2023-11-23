@@ -12,9 +12,9 @@ class CtlrEntrerOeuvreEtape4 extends Controleur
     {
         $this->validerEtape4();
         if(!empty($_SESSION['errCategorie'])){
-            return "pageEntreOeuverEtape4";
+            return "vueEntreOeuverEtape4";
         }
-        return "pageEntrerOeuvreEtape4";
+        return "vueEntrerOeuvreEtape4";
     }
 
     public function validerEtape4(){

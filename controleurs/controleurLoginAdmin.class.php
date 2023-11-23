@@ -15,6 +15,6 @@ class CtlrLoginAdmin extends Controleur
 
     public function executerAction()
     {
-        return "loginAdmin";
+        return "vueLoginAdmin";
     }
 }

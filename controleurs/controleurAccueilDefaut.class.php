@@ -22,7 +22,7 @@ class CtlrAccueilDefaut extends Controleur
     public function executerAction()
     {
         //----------------------------- RETOURNER LE NOM DE LA VUE À APPELER -----
-        return "pageAccueil";
+        return "vueAccueil";
     }
 
 

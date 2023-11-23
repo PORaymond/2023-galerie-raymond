@@ -14,7 +14,7 @@ class CtlrInsererOeuvre extends Controleur
     public function executerAction()
     {
         $this->faireInsertion();
-        return "pageInsererOeuvre";
+        return "vueInsererOeuvre";
     }
 
     public function faireInsertion()

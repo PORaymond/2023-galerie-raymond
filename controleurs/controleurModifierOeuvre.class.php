@@ -50,6 +50,6 @@ class CtlrModifierOeuvre extends Controleur
     public function executerAction()
     {
         $this->tabOeuvres = OeuvreDAO::chercherTous();
-        return "pageModifierOeuvre";
+        return "vueModifierOeuvre";
     }
 }

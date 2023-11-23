@@ -30,7 +30,7 @@ class CtlrAccueilCatalogue extends Controleur
     public function executerAction()
     {
         $this->tabOeuvres = OeuvreDAO::chercherTous();
-        return "pageAccueilCatalogue";
+        return "vueAccueilCatalogue";
     }
 
 }

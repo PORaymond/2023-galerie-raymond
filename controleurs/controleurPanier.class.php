@@ -9,6 +9,6 @@ class CtlrPanier extends Controleur
 
     public function executerAction()
     {
-        return "pagePanier";
+        return "vuePanier";
     }
 }

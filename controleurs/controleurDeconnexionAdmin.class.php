@@ -17,6 +17,6 @@ class CtlrDeconnexionAdmin extends Controleur
         unset($_SESSION['utilisateurConnecte']);
 
         session_destroy();
-        return "pageAccueil";
+        return "vueAccueil";
     }
 }

@@ -35,6 +35,6 @@ class CtlrChoisirSuppressionOeuvre extends Controleur
     public function executerAction()
     {
         $this->tabOeuvres = OeuvreDAO::chercherTous();
-        return "pageChoisirSuppressionOeuvre";
+        return "vueChoisirSuppressionOeuvre";
     }
 }

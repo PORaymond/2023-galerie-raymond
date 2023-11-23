@@ -64,6 +64,6 @@ class CtlrCreerCompteClient extends Controleur
 
         $_SESSION['nom_utilisateur'] = $nouveauClient->getPrenom() . " " . $nouveauClient->getNom();
 
-        return "succesNvCompte";
+        return "vueSuccesNvCompte";
     }
 }

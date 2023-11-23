@@ -12,9 +12,9 @@ class CtlrEntrerOeuvreEtape2 extends Controleur
     {
         $this->validerEtape1();
         if (empty($_SESSION['titre'])) {
-            return "pageEntrerOeuvre";
+            return "vueEntrerOeuvre";
         } else {
-            return "pageEntrerOeuvreEtape2";
+            return "vueEntrerOeuvreEtape2";
         }
         
     }

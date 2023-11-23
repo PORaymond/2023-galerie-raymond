@@ -46,7 +46,7 @@ if (isset($_SESSION['photo'])) {
                     <div class="card couleur-fond text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
-                                <form action="?action=pageEntrerOeuvreEtape3" method="post">
+                                <form action="?action=entrerOeuvreEtape3" method="post">
                                                                         
                                     <div class = "etape">
                                         <label class="oeuvre" for="date">Date de création</label><br>

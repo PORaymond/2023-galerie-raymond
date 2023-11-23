@@ -13,9 +13,9 @@ class CtlrEntrerOeuvreEtape3 extends Controleur
         $this->validerEtape2();    
         if( empty($_SESSION['errPrix']) || empty($_SESSION['date']))
         {
-            return "pageEntrerOeuvreEtape3";
+            return "vueEntrerOeuvreEtape3";
         } else {
-            return "pageEntrerOeuvreEtape4";
+            return "vueEntrerOeuvreEtape4";
         }
     }
     public function validerEtape2(){

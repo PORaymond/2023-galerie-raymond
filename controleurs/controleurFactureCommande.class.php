@@ -40,7 +40,7 @@ class CtlrFactureCommande extends Controleur
     public function executerAction()
     {
         $this->nouvelleCommande();
-        return "pageFactureCommande";
+        return "vueFactureCommande";
 
     }
 

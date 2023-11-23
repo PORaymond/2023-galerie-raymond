@@ -16,7 +16,7 @@ class CtlrDeconnexion extends Controleur
     public function executerAction()
     {
         $this->logout();
-        return "pageAccueil";
+        return "vueAccueil";
     }
 
     public function logout()

@@ -40,7 +40,7 @@ class CtlrAdminCatalogue extends Controleur
     public function executerAction()
     {
         $this->tabOeuvres = OeuvreDAO::chercherTous();
-        return "pageAdminCatalogue";
+        return "vueAdminCatalogue";
     }
 
 }

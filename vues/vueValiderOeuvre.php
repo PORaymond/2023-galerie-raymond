@@ -11,9 +11,9 @@ $categorie = "";
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-
+/*
     if (empty($_SESSION['titre']) || empty($_SESSION['prix']) || empty($_SESSION['date']) || empty($_SESSION['photo'])) {
-        header("Location: ?action=pageEntrerOeuvre");
+        header("Location: ?action=entrerOeuvre");
 
     }
     if (isset($_SESSION)) {
@@ -25,7 +25,7 @@ if (session_status() == PHP_SESSION_NONE) {
         $categorie = $_SESSION['categorie'];
     }
 
-$titre = "Valider l’entrée de l'oeuvre";
+$titre = "Valider l’entrée de l'oeuvre";*/
 ?>
     <title><?php echo $titre ?></title>
 </head>

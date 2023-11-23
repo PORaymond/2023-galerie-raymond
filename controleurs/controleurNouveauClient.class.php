@@ -27,7 +27,7 @@ class CtlrNouveauClient extends Controleur
     // executerAction retourne le nom de la vue à afficher par index.php
     public function executerAction()
     {
-            return "nouveauClient";
+            return "vueNouveauClient";
     }
 
 

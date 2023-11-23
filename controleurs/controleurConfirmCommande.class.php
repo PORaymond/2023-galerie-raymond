@@ -38,7 +38,7 @@ class CtlrConfirmCommande extends Controleur
 
     public function executerAction()
     {
-        return "pageConfirmationCommande";
+        return "vueConfirmationCommande";
 
     }
 

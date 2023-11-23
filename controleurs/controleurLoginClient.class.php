@@ -15,6 +15,6 @@ class CtlrLoginClient extends Controleur
             array_push($this->messagesErreur, "Vous êtes déjà connecté.");
             return "pageAccueilCatalogue";
         }
-        return "loginClient";
+        return "vueLoginClient";
     }
 }

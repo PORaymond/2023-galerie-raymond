@@ -13,7 +13,7 @@ class CtlrSuppressionOeuvre extends Controleur
     public function executerAction()
     {
         $this->supprimerOeuvre();
-        return "suppressionOeuvre";
+        return "vueSuppressionOeuvre";
     }
 
     public function supprimerOeuvre()

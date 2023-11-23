@@ -17,7 +17,7 @@ class CtlrConfirmerSuppressionOeuvre extends Controleur
     public function executerAction()
     {
         $this->recupererIdSuppression();
-        return "pageConfirmerSuppressionOeuvre";
+        return "vueConfirmerSuppressionOeuvre";
     }
 
     public function recupererIdSuppression()

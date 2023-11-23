@@ -25,7 +25,7 @@ class CtlrSeConnecter extends Controleur
         //----------------------------- VÉRIFIER LA VALIDITÉ DE LA SESSION  -----------
         if ($this->acteur == "client") {
             array_push($this->messagesErreur, "Vous êtes déjà connecté.");
-            return "loginClient";
+            return "vueLoginClient";
         }
         //----------------------------- VÉRIFIER LA VALIDITÉ DES POSTS ---------------
 
@@ -33,19 +33,19 @@ class CtlrSeConnecter extends Controleur
             $clientLogin = ClientDAO::chercherLogin($_POST['nom_utilisateur']);
             if ($clientLogin == null) {
                 array_push($this->messagesErreur, "Ce client n'existe pas.");
-                return "loginClient";
+                return "vueLoginClient";
             } elseif (!($clientLogin->getMdPasse() === ($_POST['mot_passe']))) {
                 array_push($this->messagesErreur, "Le mot de passe est incorrect.");
-                return "loginClient";
+                return "vueLoginClient";
             } else {
                 $this->acteur = "client";
                 $_SESSION['bienvenueClient'] = $clientLogin->getPrenom() . " " . $clientLogin->getNom();
                 $_SESSION['utilisateurConnecte'] = "client";
                 // pour recuperer idClient pour la commande
                 $_SESSION['idUtilisateur'] = $clientLogin->getIdClient();
-                return "pageAccueilCatalogue";
+                return "vueAccueilCatalogue";
             }
         }
-        return "pageAccueilCatalogue";
+        return "vueAccueilCatalogue";
     }
 }

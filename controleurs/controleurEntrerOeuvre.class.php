@@ -11,7 +11,7 @@ class CtlrEntrerOeuvre extends Controleur
     public function executerAction()
     {
         $this->verifierErreurs();
-        return "pageEntrerOeuvre";
+        return "vueEntrerOeuvre";
     }
     public function verifierErreurs(){
         // Vérification des messages d’erreur

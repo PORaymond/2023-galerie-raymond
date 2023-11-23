@@ -20,7 +20,7 @@ class CtlrEnregistrerModification extends Controleur
     {
 
         $this->enregistrerLesModifications();
-        return "enregistrerModification";
+        return "vueEnregistrerModification";
 
     }
 
@@ -42,6 +42,7 @@ class CtlrEnregistrerModification extends Controleur
             $_SESSION['idCategorie'],
             "true"
         );
+        //TODO
         $dump = OeuvreDAO::modifier($uneOeuvre);
     }
 }

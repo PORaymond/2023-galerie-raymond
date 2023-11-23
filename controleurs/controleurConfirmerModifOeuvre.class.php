@@ -17,7 +17,7 @@ class CtlrConfirmerModifOeuvre extends Controleur
     public function executerAction()
     {
         $this->confirmerModification();
-        return "pageConfirmerModifOeuvre";
+        return "vueConfirmerModifOeuvre";
     }
 
     public function confirmerModification()

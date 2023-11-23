@@ -13,7 +13,7 @@ class CtlrValiderModifOeuvre extends Controleur
     public function executerAction()
     {
 
-        return "pageValiderModifOeuvre";
+        return "vueValiderModifOeuvre";
 
     }
 }

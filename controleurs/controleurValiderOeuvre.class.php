@@ -11,7 +11,7 @@ class CtlrValiderOeuvre extends Controleur
     public function executerAction()
     {
         $this->validerOeuvre();
-        return "pageValiderOeuvre";
+        return "vueValiderOeuvre";
     }
 
     public function validerOeuvre()
