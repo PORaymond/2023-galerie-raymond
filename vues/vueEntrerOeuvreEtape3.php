@@ -46,7 +46,9 @@ $titre = "Nouvelle oeuvre étape 3";
                     <div class="card couleur-fond text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <div class="mb-md-5 mt-md-4 pb-5">
-                                <form action="?action=validerOeuvre" method="post">
+                                <form action="?action=entrerOeuvre4" method="post">
+                                    <div class = "etape">
+
                                     <div class = "etape">
                                         <label class="oeuvre" for="categorie">Catégorie</label><br>
                                         <select name="categorie" id="categorie">
@@ -67,12 +69,14 @@ $titre = "Nouvelle oeuvre étape 3";
                                         </div>
                                         <br>
                                     </div>
-                                    
-                                    <div class = "etape">
                                         <!-- résumé de l’ajout-->
                                         <input type="submit" value="Ajouter">
-                                    </div>    
-                                                             
+                                    <?php 
+                                    var_dump($_SESSION['titre']);
+                                    var_dump($_SESSION['prix']);
+                                    var_dump($_SESSION['date']);
+                                    var_dump($_SESSION['photo']);
+                                    ?>                                                         
                                 </form>
                             </div>
                         </div>

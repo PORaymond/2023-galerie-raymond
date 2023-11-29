@@ -1,8 +1,8 @@
 <!-- On redirige vers l'index du site si on essaie d'avoir un accès direct -->
 <?php if (!isset($controleur)) header("Location: ..\index.php");
-//if (session_status() == PHP_SESSION_NONE){
-//    session_start();
-//}
+if (session_status() == PHP_SESSION_NONE){
+   session_start();
+}
 $titre = "Bienvenue à la galerie Raymond";
 ?>
 

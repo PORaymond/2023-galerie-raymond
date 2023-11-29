@@ -80,9 +80,24 @@ ul li a:active {
     background-color: var(--fonce);
 }
 
+.couleur-fond-clair {
+    background-color: var(--clair);
+}
+
 .couleur-bouton {
     background-color: var(--clair);
     color: var(--fonce);
+}
+
+.contour-fonce{
+    border-color: var(--fonce);
+}
+
+.text-fonce{
+    color: var(--fonce) !important;
+}
+.text-moyen{
+    color: var(--moyen);
 }
 
 .bas {
