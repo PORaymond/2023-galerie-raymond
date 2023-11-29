@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE){
    session_start();
 }
 $titre = "Bienvenue à la galerie Raymond";
-include_once("__DIR__./../inclusions/contenu-head.php");
+
 ?>
 
 <title><?php echo ($titre);?></title>
