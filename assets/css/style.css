@@ -51,12 +51,14 @@ ul {
 
 
 .conteneur {
+    height: 100vh;
+    padding: 100px 0;
     width: 100%;
     background-color: var(--fonce);
     color: var(--clair);
 }
 
-footer li ul {
+footer ul li  {
     list-style-type: none;
     display: inline;
     margin: 30px;
@@ -71,6 +73,7 @@ ul li a:active {
 
 }
 .titre-accueil{
+    color: var(--clair);
     margin: auto;
     text-align: center;
     padding: 30px 0 70px 0;
