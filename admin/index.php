@@ -1,2 +1,2 @@
 <?php
-header("Location:../?action=loginAdmin");
+header("Location:../Administrateur");
