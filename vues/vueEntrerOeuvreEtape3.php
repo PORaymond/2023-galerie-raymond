@@ -1,4 +1,3 @@
-
 <?php
 include_once(__DIR__."/../modele/DAO/categorieDAO.class.php");
 $tableau_categorie = CategorieDao::chercherTous();
@@ -8,11 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 //Réinitialisation des variables globale associées aux propriétés de la nouvelle oeuvre
-$titreOeuvre = "";
-$descOeuvre = "";
-$prix = "";
-$date = "";
-$photo = "";
+
 if (isset($_SESSION['titre'])) {
     $titreOeuvre = $_SESSION['titre'];
 }
@@ -53,7 +48,7 @@ $titre = "Nouvelle oeuvre étape 3";
                                         <label class="oeuvre" for="categorie">Catégorie</label><br>
                                         <select name="categorie" id="categorie">
                                             <?php
-                                            // Remplir l’élément select avec le catégories de ma base de données 
+                                            // Remplir l’élément select avec les catégories de ma base de données 
                                                 foreach ($tableau_categorie as $entry) {
                                                     $value = $entry->getIdCategorie();
                                                     $label = $entry->getDescCategorie();
@@ -86,13 +81,8 @@ $titre = "Nouvelle oeuvre étape 3";
         </div>
     </main>
 </div>
-
-
     <script src="assets/js/script.js"></script>
-    
-    
-</script>
-    </body>
+</body>
 </html>
 
 

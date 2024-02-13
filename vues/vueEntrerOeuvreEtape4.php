@@ -8,13 +8,6 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-//Réinitialisation des variables globale associées aux propriétés de la nouvelle oeuvre
-$titreOeuvre = "";
-$descOeuvre = "";
-$prix = "";
-$date = "";
-$photo = "";
-
 if (isset($_SESSION['prix'])) {
     $prix = $_SESSION['prix'];
 }
@@ -24,9 +17,6 @@ if (isset($_SESSION['date'])) {
 if (isset($_SESSION['photo'])) {
     $photo = $_SESSION['photo'];
 }
-//Appel de la fonction categorieDao::chercherTous()
-
-
 ?>
     <title><?php echo $titre ?></title>
 </head>

@@ -8,8 +8,6 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 //Réinitialisation des variables globale associées aux propriétés de la nouvelle oeuvre
-$titreOeuvre = "";
-$descOeuvre = "";
 $prix = "";
 $date = "";
 $photo = "";
@@ -28,7 +26,6 @@ if (isset($_SESSION['date'])) {
 if (isset($_SESSION['photo'])) {
     $photo = $_SESSION['photo'];
 }
-//Appel de la fonction categorieDao::chercherTous()
     $titre = "Nouvelle oeuvre étape 2";
 ?>
     <title><?php echo $titre ?></title>
@@ -60,7 +57,6 @@ if (isset($_SESSION['photo'])) {
                                         value="<?php echo $prix ?>"><span
                                         class="erreur"><?php echo $_SESSION['errPrix'] ?> </span><br>
                                         
-
                                     </div>                  
                                 </form>
                             </div>
